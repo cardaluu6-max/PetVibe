@@ -96,7 +96,11 @@ body
     top: 450px;
     left: 20px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 0s;
 }
+
 
 .thisPaw2
 {
@@ -106,6 +110,9 @@ body
     top: 400px;
     left: 250px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 1s;
 }
 
 .thisPaw3
@@ -116,6 +123,9 @@ body
     top: 250px;
     left: 150px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 2s;
 }
 
 .thisPaw4
@@ -126,6 +136,9 @@ body
     top: 170px;
     left: 380px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 3s;
 }
 
 .thisPaw5
@@ -136,6 +149,9 @@ body
     top: 10px;
     left: 270px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 4s;
 }
 
 .thisPaw6
@@ -146,4 +162,31 @@ body
     top: -30px;
     left: 490px;
     transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 1
+    }
+    50% 
+    {
+        opacity: 1;
+    }
+    75%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
 }
