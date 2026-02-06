@@ -1,0 +1,312 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.loginSection 
+{
+    background-color: white; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.textfieldArea
+{
+    width: 100%;
+}
+
+.picturesArea
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2795E;
+    position: relative;
+}
+
+.dogandcatPhoto
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.upperSection{
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.upperSection .pawImage
+{
+   object-fit: cover; 
+   width: 100%;
+   height: 100%;
+   border-radius: inherit;
+   display: block;
+   animation: popIn 0.8s ease-out forwards;
+   animation-delay: 0s; 
+}
+.picturesArea h3
+{
+    z-index: 10;
+    /* font-family: 'Chewy', cursive; */
+    font-family: 'Lilita One', sans-serif;
+    position: absolute;
+    left: 80px;
+    color: white;
+    top: -2px;
+    font-size: 2rem;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+@keyframes popIn
+{
+    0%
+    {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50%
+    {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    75%
+    {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.firstPart
+{
+    z-index: 10;
+    font-family: 'Lilita One', sans-serif;
+    position: absolute;
+    left: 20px;
+    color: white;
+    top: 360px;
+    font-size: 2.7rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.secondPart
+{
+    z-index: 10;
+    font-family: 'Lilita One', sans-serif;
+    position: absolute;
+    left: 260px;
+    color: white;
+    top: 360px;
+    font-size: 2.7rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+/* @keyframes slideIn 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+
+.firstSen
+{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 425px;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.secondSen
+{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: white;
+    left: 200px;
+    top: 425px;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.thirdSen
+{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 460px;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+.fourthSen
+{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: white;
+    left: 300px;
+    top: 460px;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes fadeinText
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.thisPaw1
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 0s;
+}
+
+
+.thisPaw2
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 1s;
+}
+
+.thisPaw3
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 2s;
+}
+
+.thisPaw4
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 170px;
+    left: 380px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 3s;
+}
+
+.thisPaw5
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 4s;
+}
+
+.thisPaw6
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    left: 490px;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 1
+    }
+    50% 
+    {
+        opacity: 1;
+    }
+    75%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
