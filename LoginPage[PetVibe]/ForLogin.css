@@ -104,6 +104,46 @@ body
     height: 100px;
     position: absolute;
     top: 400px;
-    left: 200px;
+    left: 250px;
+    transform: rotate(35deg);
+}
+
+.thisPaw3
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    transform: rotate(35deg);
+}
+
+.thisPaw4
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 170px;
+    left: 380px;
+    transform: rotate(35deg);
+}
+
+.thisPaw5
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    transform: rotate(35deg);
+}
+
+.thisPaw6
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    left: 490px;
     transform: rotate(35deg);
 }
