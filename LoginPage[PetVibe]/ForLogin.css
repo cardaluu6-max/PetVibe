@@ -310,3 +310,77 @@ body
         opacity: 0;
     }
 }
+
+.textfieldArea
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helloPart
+{
+    font-family: 'Lilita One', sans-serif;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.welcomeBackPart
+{
+    font-family: 'Lilita One', sans-serif;
+    position: absolute;
+    font-size: 3rem;
+    top: 60px;
+}
+
+.inputContainer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 200px;
+}
+
+#numberInput
+{
+    width: 300px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #F2795E;
+    border-radius: 5px;
+    background-image: url('iconUsername.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 30px 30px;
+    padding-right: 40px;
+}
+
+#passwordInput
+{
+    width: 300px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #F2795E;
+    border-radius: 5px;
+    background-image: url('nobackgroundIconPass.png');
+    background-repeat: no-repeat;
+    background-position: right -3px center;
+    background-size: 55px 30px;
+    padding-right: 40px;
+}
+
+#loginButton
+{
+    margin-top: 50px;
+    width: 150px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #F2795E;
+    color: white;
+    cursor: pointer;
+}
