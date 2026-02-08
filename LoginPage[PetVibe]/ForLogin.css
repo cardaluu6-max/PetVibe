@@ -383,4 +383,85 @@ body
     background-color: #F2795E;
     color: white;
     cursor: pointer;
+    transition: all 0.3 ease-out;
+    border: 2px solid #F2795E;
+}
+
+#loginButton:hover
+{
+    background-color: white;
+    color: #F2795E;
+    border: 2px solid #F2795E;
+}
+
+#loginButton:active
+{
+    transform: scale(0.95);
+}
+
+.continueText
+{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #888888;
+}
+
+.containerforIcon
+{
+    display: flex;
+    gap:25px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.googlePic, .facebookPic
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: inherit;
+    border: 2px solid #F2795E;
+    animation: scaleDown 0.3s ease-out both;
+}
+
+.googlePic:hover, .facebookPic:hover
+{
+    animation: scaleUp 0.3s ease-out both;
+}
+
+@keyframes scaleUp
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.5);
+    }
+    100%
+    {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes scaleDown
+{
+    0%
+    {
+        transform: scale(1.3);
+    }
+    50%
+    {
+        transform: scale(0.8);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
