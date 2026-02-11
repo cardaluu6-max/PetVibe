@@ -115,7 +115,7 @@ body {
     transition: all 0.3s ease-out;
     opacity: 0;
     animation: slideDown 0.5s ease-out forwards 0s;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #loginButton:hover {
@@ -127,13 +127,30 @@ body {
     transform: scale(0.95);
 }
 
+/* ======REGISTER PART====== */
+.registerLink
+{
+    margin-top: 50px;
+    font-size: 0.9rem;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 0.2s;
+}
+
+.registerLink a 
+{
+    text-decoration: none;
+    color: #F2795E;
+}
+
+
 /* ===== CONTINUE TEXT & ICONS ===== */
 .continueText {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 0.9rem;
     color: #888888;
     opacity: 0;
     animation: slideDown 0.5s ease-out forwards 0.1s;
+    text-decoration: none;
 }
 
 .containerforIcon {
@@ -205,12 +222,12 @@ body {
     animation: fadeInOut 10s ease-in infinite;
 }
 
-.thisPaw1 { animation-delay: 0s; top: 45%; left: 5%; }
-.thisPaw2 { animation-delay: 1s; top: 40%; left: 30%; }
-.thisPaw3 { animation-delay: 2s; top: 25%; left: 15%; }
-.thisPaw4 { animation-delay: 3s; top: 15%; left: 45%; }
-.thisPaw5 { animation-delay: 4s; top: 5%; left: 35%; }
-.thisPaw6 { animation-delay: 5s; top: -2%; left: 60%; }
+.thisPaw1 { animation-delay: 0s; top: 80%; left: 5%; }
+.thisPaw2 { animation-delay: 1s; top: 70%; left: 40%; }
+.thisPaw3 { animation-delay: 2s; top: 40%; left: 25%; }
+.thisPaw4 { animation-delay: 3s; top: 30%; left: 60%; }
+.thisPaw5 { animation-delay: 4s; top: 1%; left: 50%; }
+.thisPaw6 { animation-delay: 5s; top: -5%; left: 80%; }
 
 /* ===== IMAGE CONTENT ===== */
 .imageContent {
