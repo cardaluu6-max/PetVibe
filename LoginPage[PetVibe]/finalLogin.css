@@ -1,0 +1,548 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* ===== CONTAINER & LAYOUT ===== */
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.loginSection {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ===== TEXT FIELD AREA (Mobile First) ===== */
+.textfieldArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.headerLogo {
+    display: none;
+}
+
+/* ===== HEADER TEXT ===== */
+.helloPart {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 1.2s;
+}
+
+.welcomeBackPart {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 0.9s;
+}
+
+/* ===== INPUT FIELDS ===== */
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+#numberInput,
+#passwordInput {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #F2795E;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 30px 30px;
+    padding-right: 40px;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+.warning
+{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#numberInput {
+    background-image: url('iconUsername.png');
+    animation-delay: 0.6s;
+}
+
+#passwordInput {
+    background-image: url('nobackgroundIconPass.png');
+    animation-delay: 0.3s;
+}
+
+#numberInput::placeholder,
+#passwordInput::placeholder {
+    color: #999;
+}
+
+/* ===== BUTTON ===== */
+#loginButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #F2795E;
+    border-radius: 5px;
+    background-color: #F2795E;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 0s;
+    margin-top: -10px;
+}
+
+#loginButton:hover {
+    background-color: white;
+    color: #F2795E;
+}
+
+#loginButton:active {
+    transform: scale(0.95);
+}
+
+/* ======REGISTER PART====== */
+.registerLink
+{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 0.2s;
+}
+
+.registerLink a 
+{
+    text-decoration: none;
+    color: #F2795E;
+}
+
+
+/* ===== CONTINUE TEXT & ICONS ===== */
+.continueText {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #888888;
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards 0.1s;
+    text-decoration: none;
+}
+
+.containerforIcon {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.googlePic,
+.facebookPic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #F2795E;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    animation: iconPopUp 0.6s ease-out forwards;
+}
+
+.googlePic {
+    animation-delay: 1.5s;
+}
+
+.facebookPic {
+    animation-delay: 1.7s;
+}
+
+.googlePic:hover,
+.facebookPic:hover {
+    transform: scale(1.2);
+}
+
+/* ===== PICTURES AREA (Hidden on Mobile) ===== */
+.picturesArea {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #F2795E;
+    position: relative;
+    overflow: hidden;
+}
+
+.dogandcatPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.pawImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    display: block;
+}
+
+/* ===== PAW IMAGES ===== */
+.thisPaw1, .thisPaw2, .thisPaw3, .thisPaw4, .thisPaw5, .thisPaw6 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: rotate(35deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease-in infinite;
+}
+
+.thisPaw1 { animation-delay: 0s; top: 80%; left: 5%; }
+.thisPaw2 { animation-delay: 1s; top: 70%; left: 40%; }
+.thisPaw3 { animation-delay: 2s; top: 40%; left: 25%; }
+.thisPaw4 { animation-delay: 3s; top: 30%; left: 60%; }
+.thisPaw5 { animation-delay: 4s; top: 1%; left: 50%; }
+.thisPaw6 { animation-delay: 5s; top: -5%; left: 80%; }
+
+/* ===== IMAGE CONTENT ===== */
+.imageContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.firstPart,
+.secondPart {
+    font-family: 'Lilita One', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    opacity: 0;
+    animation: popIn 0.4s ease-out forwards;
+}
+
+.firstPart { animation-delay: 0.4s; }
+.secondPart { animation-delay: 0.6s; }
+
+.firstSen,
+.secondSen,
+.thirdSen,
+.fourthSen {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    opacity: 0;
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.firstSen { animation-delay: 0.8s; }
+.secondSen { animation-delay: 1s; }
+.thirdSen { animation-delay: 1.2s; }
+.fourthSen { animation-delay: 1.4s; }
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes iconPopUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    85% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* ===== TABLET (768px and up) ===== */
+@media (min-width: 768px) {
+    .textfieldArea {
+        padding: 40px;
+    }
+
+    .helloPart,
+    .welcomeBackPart {
+        font-size: 2.5rem;
+    }
+
+    .inputContainer {
+        gap: 25px;
+    }
+
+    #numberInput,
+    #passwordInput {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    #loginButton {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .containerforIcon {
+        gap: 25px;
+    }
+
+    .googlePic,
+    .facebookPic {
+        width: 55px;
+        height: 55px;
+    }
+
+    .thisPaw1, .thisPaw2, .thisPaw3, .thisPaw4, .thisPaw5, .thisPaw6 {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* ===== DESKTOP (1024px and up) - Two Column Layout ===== */
+@media (min-width: 1024px) {
+    .loginSection {
+        flex-direction: row;
+    }
+
+    .textfieldArea {
+        width: 50%;
+        padding: 40px;
+        min-height: 100vh;
+    }
+
+    .picturesArea {
+        display: flex;
+        width: 50%;
+        order: 2;
+    }
+
+    .headerLogo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 20;
+    }
+
+    .headerLogo .pawImage {
+        width: 50px;
+        height: 50px;
+        animation: popIn 0.4s ease-out forwards;
+    }
+
+    .headerLogo h3 {
+        font-family: 'Lilita One', sans-serif;
+        color: #F2795E;
+        font-size: 1.8rem;
+        margin: 0;
+        animation: popIn 0.4s ease-out forwards 0.2s;
+        opacity: 0;
+    }
+
+    .helloPart,
+    .welcomeBackPart {
+        font-size: 3rem;
+    }
+
+    .inputContainer {
+        max-width: 320px;
+    }
+
+    #numberInput,
+    #passwordInput {
+        width: 320px;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    #loginButton {
+        width: 150px;
+    }
+
+    .googlePic,
+    .facebookPic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .thisPaw1, .thisPaw2, .thisPaw3, .thisPaw4, .thisPaw5, .thisPaw6 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imageContent {
+        padding: 60px;
+    }
+
+    .firstPart,
+    .secondPart {
+        font-size: 2.7rem;
+    }
+
+    .firstSen,
+    .secondSen,
+    .thirdSen,
+    .fourthSen {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== LARGE DESKTOP (1440px and up) ===== */
+@media (min-width: 1440px) {
+    .helloPart,
+    .welcomeBackPart {
+        font-size: 3.2rem;
+    }
+
+    .firstPart,
+    .secondPart {
+        font-size: 3rem;
+    }
+
+    .inputContainer {
+        max-width: 350px;
+    }
+
+    #numberInput,
+    #passwordInput {
+        width: 350px;
+    }
+}
+
+/* ===== LANDSCAPE & SMALL HEIGHT ===== */
+@media (max-height: 600px) {
+    .textfieldArea {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .helloPart,
+    .welcomeBackPart {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .inputContainer {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    #numberInput,
+    #passwordInput {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #loginButton {
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .continueText {
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    .containerforIcon {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .googlePic,
+    .facebookPic {
+        width: 40px;
+        height: 40px;
+    }
+}
